@@ -2,12 +2,13 @@
 
 Starter templates for doing interpretability research.
 
+Interpretability research is an exciting and growing field of machine learning. If we are able to understand what happens within neural networks in diverse domains, we can see **why** the network gives us specific outputs and detect deception, understand choices, and change how they work.
+
 ![](https://uploads-ssl.webflow.com/634e78132252d2b0203a9ac8/635662f4e41031331b88038e_2_interpretability_teaser.png)
 
-## Made for the Interpretability Hackathon ([link](https://itch.io/jam/interpretability))
+This list of resources was made for the Interpretability Hackathon ([link](https://itch.io/jam/interpretability)) and contains an array of useful starter templates, tools to investigate model activations, and a number of introductory resources. Check out [aisi.ai](https://aisi.ai/) for some ideas for projects within ML & AI safety.
 
 - [Interpretability starter](#interpretability-starter)
-  - [Made for the Interpretability Hackathon (link)](#made-for-the-interpretability-hackathon-link)
     - [Inspiration](#inspiration)
     - [See also the tools available on interpretability:](#see-also-the-tools-available-on-interpretability)
     - [Introductions to interpretability](#introductions-to-interpretability)
@@ -40,8 +41,9 @@ Several ideas are represented in **the project of mechanistic interpretability*
 
 #### [Christoph Molnar's book about interpretability](https://christophm.github.io/interpretable-ml-book)
 
-[<img src="https://christophm.github.io/interpretable-ml-book/images/cutout.png" width="200px">](https://christophm.github.io/interpretable-ml-book/)
 An amazing introduction to traditional interpretability research. We recommend reading the [taxonomy of interpretability](https://christophm.github.io/interpretable-ml-book/taxonomy-of-interpretability-methods.html) and about the specific methods of [PDP](https://christophm.github.io/interpretable-ml-book/pdp.html), [ALE](https://christophm.github.io/interpretable-ml-book/ale.html), [ICE](https://christophm.github.io/interpretable-ml-book/ice.html), [LIME](https://christophm.github.io/interpretable-ml-book/lime.html), [Shapley values](https://christophm.github.io/interpretable-ml-book/shapley.html), and [SHAP ](https://christophm.github.io/interpretable-ml-book/shap.html). Also read the chapter on [neural network interpretation](https://christophm.github.io/interpretable-ml-book/neural-networks.html) such as [saliency maps](https://christophm.github.io/interpretable-ml-book/pixel-attribution.html) and [adversarial examples](https://christophm.github.io/interpretable-ml-book/adversarial.html). He has also published a ["Common pitfalls of interpretability" post](https://mindfulmodeler.substack.com/p/8-pitfalls-to-avoid-when-interpreting) (and its [paper](https://arxiv.org/pdf/2007.04131.pdf)) that is recommended reading.
+
+[<img src="https://christophm.github.io/interpretable-ml-book/images/cutout.png" width="200px">](https://christophm.github.io/interpretable-ml-book/)
 
 #### Other introductions
 
