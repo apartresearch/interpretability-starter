@@ -24,9 +24,13 @@ Several ideas are represented in **the project of mechanistic interpretability*
 
 ### Introductions to interpretability
 
-**Christoph Molnar's completely new book** on interpretable machine learning is an amazing introduction: <https://christophm.github.io/interpretable-ml-book>. We recommend reading about the specific methods of [PDP](https://christophm.github.io/interpretable-ml-book/pdp.html), [ALE](https://christophm.github.io/interpretable-ml-book/ale.html), [ICE](https://christophm.github.io/interpretable-ml-book/ice.html), [LIME](https://christophm.github.io/interpretable-ml-book/lime.html), [Shapley values](https://christophm.github.io/interpretable-ml-book/shapley.html), and [SHAP ](https://christophm.github.io/interpretable-ml-book/shap.html). Also read the chapter on [neural network interpretation](https://christophm.github.io/interpretable-ml-book/neural-networks.html) such as [saliency maps](https://christophm.github.io/interpretable-ml-book/pixel-attribution.html) and [adversarial examples](https://christophm.github.io/interpretable-ml-book/adversarial.html).
+#### [Christoph Molnar's book about interpretability](https://christophm.github.io/interpretable-ml-book)
+
+An amazing introduction to traditional interpretability research. We recommend reading the [taxonomy of interpretability](https://christophm.github.io/interpretable-ml-book/taxonomy-of-interpretability-methods.html) and about the specific methods of [PDP](https://christophm.github.io/interpretable-ml-book/pdp.html), [ALE](https://christophm.github.io/interpretable-ml-book/ale.html), [ICE](https://christophm.github.io/interpretable-ml-book/ice.html), [LIME](https://christophm.github.io/interpretable-ml-book/lime.html), [Shapley values](https://christophm.github.io/interpretable-ml-book/shapley.html), and [SHAP ](https://christophm.github.io/interpretable-ml-book/shap.html). Also read the chapter on [neural network interpretation](https://christophm.github.io/interpretable-ml-book/neural-networks.html) such as [saliency maps](https://christophm.github.io/interpretable-ml-book/pixel-attribution.html) and [adversarial examples](https://christophm.github.io/interpretable-ml-book/adversarial.html). He has also published a ["Common pitfalls of interpretability" post](https://mindfulmodeler.substack.com/p/8-pitfalls-to-avoid-when-interpreting) that is recommended reading.
 
 [<img src="https://christophm.github.io/interpretable-ml-book/images/cutout.png" width="200px">](https://christophm.github.io/interpretable-ml-book/)
+
+#### Other resources
 
 - A video walkthrough of A Mathematical Framework for Transformer Circuits: <https://www.youtube.com/watch?v=KV5gbOmHbjU>
 - Jacob Hilton's deep learning curriculum interpretability: <https://github.com/jacobhilton/deep_learning_curriculum/blob/master/8-Interpretability.md>
