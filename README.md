@@ -24,6 +24,10 @@ Several ideas are represented in **the project of mechanistic interpretability*
 
 ### Introductions to interpretability
 
+**Christoph Molnar's completely new book** on interpretable machine learning is an amazing introduction: <https://christophm.github.io/interpretable-ml-book>. We recommend reading about the specific methods of [PDP](https://christophm.github.io/interpretable-ml-book/pdp.html), [ALE](https://christophm.github.io/interpretable-ml-book/ale.html), [ICE](https://christophm.github.io/interpretable-ml-book/ice.html), [LIME](https://christophm.github.io/interpretable-ml-book/lime.html), [Shapley values](https://christophm.github.io/interpretable-ml-book/shapley.html), and [SHAP ](https://christophm.github.io/interpretable-ml-book/shap.html). Also read the chapter on [neural network interpretation](https://christophm.github.io/interpretable-ml-book/neural-networks.html) such as [saliency maps](https://christophm.github.io/interpretable-ml-book/pixel-attribution.html) and [adversarial examples](https://christophm.github.io/interpretable-ml-book/adversarial.html).
+
+[<img src="https://christophm.github.io/interpretable-ml-book/images/cutout.png" width="200px">](https://christophm.github.io/interpretable-ml-book/)
+
 - A video walkthrough of A Mathematical Framework for Transformer Circuits: <https://www.youtube.com/watch?v=KV5gbOmHbjU>
 - Jacob Hilton's deep learning curriculum interpretability: <https://github.com/jacobhilton/deep_learning_curriculum/blob/master/8-Interpretability.md>
 - An annotated list of good interpretability papers, along with summaries and takes on what to focus on: <https://www.neelnanda.io/mechanistic-interpretability/favourite-papers>
@@ -66,6 +70,20 @@ You can expand this project by using the graph visualization on the activation f
 | [`vertices.csv`](https://github.com/apartresearch/interpretability/blob/main/graphs/data/vertices.csv)  | Each neuron in the MNIST linear classifier with its bias and layer.                                                                                           |
 | [`edges.csv`](https://github.com/apartresearch/interpretability/blob/main/graphs/data/edges.csv)        | Each connection in the neural network: `from_id, to_id, weight`.                                                                                              |
 | [`network_eda.Rmd`](https://github.com/apartresearch/interpretability/blob/main/graphs/network_eda.Rmd) | The R script for initial EDA and visualization of the network.                                                                                                |
+
+### Reviewing explainability tools
+
+There are a few tools that use interpretability to create understandable explanations of why they give the output they give. [This notebook](https://colab.research.google.com/drive/1_OfQuqEZsd6fC_cLGu43S58eUo_bIAmB?usp=sharing) provides a small intro to the most relevant libraries:
+
+- [ELI5](https://pypi.org/project/eli5/): ELI5 is a Python package which helps to debug machine learning classifiers and explain their predictions. It implements a few different analysis frameworks that work with a lot of different ML libraries. It is the most complete tool for explainability.
+
+![Explanations of output](https://warehouse-camo.ingress.cmh1.psfhosted.org/657108d350a6db09fede2cf5d02ff2c6eb2ac6d7/68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f5465616d48472d4d656d65782f656c69352f6d61737465722f646f63732f736f757263652f7374617469632f776f72642d686967686c696768742e706e67)
+
+![Image explanations of output](https://warehouse-camo.ingress.cmh1.psfhosted.org/3223146dc3811a97ebe287fda4e910ffb61ff263/68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f5465616d48472d4d656d65782f656c69352f6d61737465722f646f63732f736f757263652f7374617469632f6772616463616d2d636174646f672e706e67)
+
+- [LIME](https://christophm.github.io/interpretable-ml-book/lime.html): Local Interpretable Model-agnostic Explanations. The [TextExplainer library](https://eli5.readthedocs.io/en/latest/tutorials/black-box-text-classifiers.html) does a good job of using LIME on language models. Check out Christoph Molnar's introduction [here](https://christophm.github.io/interpretable-ml-book/lime.html).
+- SHAP: SHapley Additive exPlanations
+- MLXTEND: Machine Learning Extensions
 
 ## 👩‍🔬 Advanced templates and tools
 
