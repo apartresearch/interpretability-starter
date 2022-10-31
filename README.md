@@ -6,9 +6,23 @@ Starter templates for doing interpretability research.
 
 ## Made for the Interpretability Hackathon ([link](https://itch.io/jam/interpretability))
 
-1.  Inspiration
-2.  Project starter templates
-3.  Related datasets
+- [Interpretability starter](#interpretability-starter)
+  - [Made for the Interpretability Hackathon (link)](#made-for-the-interpretability-hackathon-link)
+    - [Inspiration](#inspiration)
+    - [See also the tools available on interpretability:](#see-also-the-tools-available-on-interpretability)
+    - [Introductions to interpretability](#introductions-to-interpretability)
+      - [Christoph Molnar's book about interpretability](#christoph-molnars-book-about-interpretability)
+      - [Other introductions](#other-introductions)
+    - [Digestible research](#digestible-research)
+- [Starter projects](#starter-projects)
+  - [🙋‍♀️ Simple templates & tools](#️-simple-templates--tools)
+    - [Activation Atlas [tool]](#activation-atlas-tool)
+    - [EasyTransformer [code]](#easytransformer-code)
+      - [Demo notebook of EasyTransformer](#demo-notebook-of-easytransformer)
+    - [Converting Neural Networks to graphs [code]](#converting-neural-networks-to-graphs-code)
+    - [Reviewing explainability tools](#reviewing-explainability-tools)
+  - [👩‍🔬 Advanced templates and tools](#-advanced-templates-and-tools)
+    - [Redwood Research's interpretability on Transformers [tool]](#redwood-researchs-interpretability-on-transformers-tool)
 
 ### Inspiration
 
