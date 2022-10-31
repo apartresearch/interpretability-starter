@@ -20,6 +20,7 @@ This list of resources was made for the Interpretability Hackathon ([link](https
       - [Demo notebook of EasyTransformer](#demo-notebook-of-easytransformer)
     - [Converting Neural Networks to graphs [code]](#converting-neural-networks-to-graphs-code)
     - [Reviewing explainability tools](#reviewing-explainability-tools)
+    - [The IML R package [code]](#the-iml-r-package-code)
   - [👩‍🔬 Advanced templates and tools](#-advanced-templates-and-tools)
     - [Redwood Research's interpretability on Transformers [tool]](#redwood-researchs-interpretability-on-transformers-tool)
 
@@ -102,6 +103,10 @@ There are a few tools that use interpretability to create understandable explana
 - [LIME](https://christophm.github.io/interpretable-ml-book/lime.html): Local Interpretable Model-agnostic Explanations. The [TextExplainer library](https://eli5.readthedocs.io/en/latest/tutorials/black-box-text-classifiers.html) does a good job of using LIME on language models. Check out Christoph Molnar's introduction [here](https://christophm.github.io/interpretable-ml-book/lime.html).
 - SHAP: SHapley Additive exPlanations
 - MLXTEND: Machine Learning Extensions
+
+### [The IML R package](https://uc-r.github.io/iml-pkg) [code]
+
+Check out [this tutorial](https://uc-r.github.io/iml-pkg) to using [the IML package](https://github.com/christophM/iml) in R. The package provides a good interface to working with LIME, feature importance, ICE, partial dependence plots, Shapley values, and more.
 
 ## 👩‍🔬 Advanced templates and tools
 
