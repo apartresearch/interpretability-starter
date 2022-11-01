@@ -7,12 +7,10 @@ Interpretability research is an exciting and growing field of machine learning. 
 This list of resources was made for the Interpretability Hackathon ([link](https://itch.io/jam/interpretability)) and contains an array of useful starter templates, tools to investigate model activations, and a number of introductory resources. Check out [aisi.ai](https://aisi.ai/) for some ideas for projects within ML & AI safety.
 
 - [Interpretability starter](#interpretability-starter)
-    - [Inspiration](#inspiration)
-    - [See also the tools available on interpretability:](#see-also-the-tools-available-on-interpretability)
-    - [Introductions to interpretability](#introductions-to-interpretability)
-      - [Christoph Molnar's book about interpretability](#christoph-molnars-book-about-interpretability)
-      - [Other introductions](#other-introductions)
-    - [Digestible research](#digestible-research)
+  - [Inspiration](#inspiration)
+  - [Introductions to mechanistic interpretability](#introductions-to-mechanistic-interpretability)
+  - [See also the tools available on interpretability:](#see-also-the-tools-available-on-interpretability)
+  - [Digestible research](#digestible-research)
 - [Starter projects](#starter-projects)
   - [🙋‍♀️ Simple templates & tools](#️-simple-templates--tools)
     - [Activation Atlas [tool]](#activation-atlas-tool)
@@ -26,7 +24,20 @@ This list of resources was made for the Interpretability Hackathon ([link](https
 
 ### Inspiration
 
-Several ideas are represented in **the project of mechanistic interpretability** on aisi.ai. See the ideas here: [aisi.ai/project/mechanistic-interpretability](https://aisafetyideas.com/project/mechanistic-interpretability). A lot of interpretability research is available on [distill.pub](https://distill.pub/), [transformer circuits](https://transformer-circuits.pub/), and [Anthropic's research](https://www.anthropic.com/research).
+We have many ideas available for inspiration on the [aisi.ai Interpretability Hackathon ideas list](http://localhost:3000/list/interpretability-hackathon). A lot of interpretability research is available on [distill.pub](https://distill.pub/), [transformer circuits](https://transformer-circuits.pub/), and [Anthropic's research page](https://www.anthropic.com/research).
+
+### Introductions to mechanistic interpretability
+
+- [Catherine Olsson's on getting starter with mechanistic interpretability research](https://www.youtube.com/watch?v=ll0oduwDEwI)
+  - [02:00](https://youtu.be/ll0oduwDEwI?t=117) Start of the talk
+  - [03:30](https://youtu.be/ll0oduwDEwI?t=205) What is mechanistic interpretability?
+  - [Slideshow](https://docs.google.com/presentation/d/1BNY1xaJLBfMzcgrY_zjqtUAu1QXlzkbbhOlV7XVVlC4/edit#slide=id.g175ecc9ec98_0_63)
+- [A video walkthrough of A Mathematical Framework for Transformer Circuits](https://www.youtube.com/watch?v=KV5gbOmHbjU).
+- The [Transformer Circuits YouTube series](https://www.youtube.com/watch?v=V3NQaDR3xI4&list=PLoyGOS2WIonajhAVqKUgEMNmeq3nEeM51)
+- Jacob Hilton's deep learning curriculum [week on interpretability](https://github.com/jacobhilton/deep_learning_curriculum/blob/master/8-Interpretability.md)
+- [An annotated list of good interpretability papers](https://www.neelnanda.io/mechanistic-interpretability/favourite-papers), along with summaries and takes on what to focus on.
+- [Christoph Molnar's book about traditional interpretability](https://christophm.github.io/interpretable-ml-book)
+- [Neel's barebones prerequisites for mechanistic interpretability research](https://www.neelnanda.io/mechanistic-interpretability/prereqs)
 
 ### See also the tools available on interpretability:
 
@@ -36,20 +47,6 @@ Several ideas are represented in **the project of mechanistic interpretability*
 - The Neural Network Playground (train simple neural networks in the browser): <https://nnplayground.com/>
 - Visualize different neural network architectures: <http://alexlenail.me/NN-SVG/index.html>
 
-### Introductions to interpretability
-
-#### [Christoph Molnar's book about interpretability](https://christophm.github.io/interpretable-ml-book)
-
-An amazing and up-to-date introduction to traditional interpretability research. We recommend reading the [taxonomy of interpretability](https://christophm.github.io/interpretable-ml-book/taxonomy-of-interpretability-methods.html) and about the specific methods of [PDP](https://christophm.github.io/interpretable-ml-book/pdp.html), [ALE](https://christophm.github.io/interpretable-ml-book/ale.html), [ICE](https://christophm.github.io/interpretable-ml-book/ice.html), [LIME](https://christophm.github.io/interpretable-ml-book/lime.html), [Shapley values](https://christophm.github.io/interpretable-ml-book/shapley.html), and [SHAP ](https://christophm.github.io/interpretable-ml-book/shap.html). Also read the chapter on [neural network interpretation](https://christophm.github.io/interpretable-ml-book/neural-networks.html) such as [saliency maps](https://christophm.github.io/interpretable-ml-book/pixel-attribution.html) and [adversarial examples](https://christophm.github.io/interpretable-ml-book/adversarial.html). He has also published a ["Common pitfalls of interpretability" post](https://mindfulmodeler.substack.com/p/8-pitfalls-to-avoid-when-interpreting) (and its [paper](https://arxiv.org/pdf/2007.04131.pdf)) that is recommended reading.
-
-[<img src="https://christophm.github.io/interpretable-ml-book/images/cutout.png" width="200px">](https://christophm.github.io/interpretable-ml-book/)
-
-#### Other introductions
-
-- [A video walkthrough of A Mathematical Framework for Transformer Circuits](https://www.youtube.com/watch?v=KV5gbOmHbjU).
-- Jacob Hilton's deep learning curriculum [week on interpretability](https://github.com/jacobhilton/deep_learning_curriculum/blob/master/8-Interpretability.md)
-- [An annotated list of good interpretability papers](https://www.neelnanda.io/mechanistic-interpretability/favourite-papers), along with summaries and takes on what to focus on.
-
 ### Digestible research
 
 - [Opinions on Interpretable Machine Learning and 70 Summaries of Recent Papers](https://www.alignmentforum.org/posts/GEPX7jgLMB8vR2qaK/opinions-on-interpretable-machine-learning-and-70-summaries) summarizes a long list of papers that is definitely useful for your interpretability projects.
@@ -57,6 +54,7 @@ An amazing and up-to-date introduction to traditional interpretability research.
 - Andrej Karpathy's ["Understanding what convnets learn"](https://cs231n.github.io/understanding-cnn/)
 - [Looking inside a neural net](https://ml4a.github.io/ml4a/looking_inside_neural_nets/)
 - 12 toy language models designed to be easier to interpret, in the style of a Mathematical Framework for Transformer Circuits: 1, 2, 3 and 4 layer models, for each size one is attention-only, one has GeLU activations and one has SoLU activations (an activation designed to make the model's neurons more interpretable - <https://transformer-circuits.pub/2022/solu/index.html>) (these aren't well documented yet, but are available in EasyTransformer)
+- [Anthropic Twitter thread going through some language model results](https://twitter.com/anthropicai/status/1541469936354136064?lang=en)
 
 # Starter projects
 
