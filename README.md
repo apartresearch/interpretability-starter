@@ -14,6 +14,7 @@ This list of resources was made for the Interpretability Hackathon ([link](https
 - [Starter projects](#starter-projects)
   - [🙋‍♀️ Simple templates & tools](#️-simple-templates--tools)
     - [Activation Atlas [tool]](#activation-atlas-tool)
+    - [BertViz](#bertviz)
     - [EasyTransformer [code]](#easytransformer-code)
       - [Demo notebook of EasyTransformer](#demo-notebook-of-easytransformer)
     - [Converting Neural Networks to graphs [code]](#converting-neural-networks-to-graphs-code)
@@ -65,6 +66,12 @@ We have many ideas available for inspiration on the [aisi.ai Interpretability Ha
 The [Activation Atlas article](https://distill.pub/2019/activation-atlas/) has a lot of figures where each has a Google Colab associated with them. Click on the "Try in a notebook". An example is [this notebook](https://colab.research.google.com/github/tensorflow/lucid/blob/master/notebooks/activation-atlas/activation-atlas-simple.ipynb) that shows a simple activation atlas.
 
 Additionally, they have [this tool](https://distill.pub/2019/activation-atlas/app.html) to explore to which sorts of images neurons activate the most to.
+
+### [BertViz](https://github.com/jessevig/bertviz)
+
+BertViz is an interactive tool for visualizing attention in [Transformer](https://jalammar.github.io/illustrated-transformer/) language models such as BERT, GPT2, or T5. It can be run inside a Jupyter or Colab notebook through a simple Python API that supports most [Huggingface models](https://huggingface.co/models). BertViz extends the [Tensor2Tensor visualization tool](https://github.com/tensorflow/tensor2tensor/tree/master/tensor2tensor/visualization) by [Llion Jones](https://medium.com/@llionj), providing multiple views that each offer a unique lens into the attention mechanism.
+
+![BertViz example image](https://github.com/jessevig/bertviz/raw/master/images/neuron-view-dark.gif)
 
 ### [EasyTransformer](https://github.com/neelnanda-io/Easy-Transformer/) [code]
 
