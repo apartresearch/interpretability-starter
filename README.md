@@ -105,6 +105,10 @@ There are a few tools that use interpretability to create understandable explana
 
 ![Image explanations of output](https://warehouse-camo.ingress.cmh1.psfhosted.org/3223146dc3811a97ebe287fda4e910ffb61ff263/68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f5465616d48472d4d656d65782f656c69352f6d61737465722f646f63732f736f757263652f7374617469632f6772616463616d2d636174646f672e706e67)
 
+- [Inseq](https://github.com/inseq-team/inseq): Inseq is a Python library to perform feature attribution of decoder-only and encoder-decoder models from the Hugging Face Transformers library. It supports multiple gradient, attention and perturbation-based attribution methods, with visualizations in Jupyter and console. See the [demo paper](http://arxiv.org/abs/2302.13942) for more detail.
+
+<img src="https://raw.githubusercontent.com/inseq-team/inseq/main/docs/source/images/inseq_python_console.gif" alt="Inseq console visualizations" width="800">
+
 - [LIME](https://christophm.github.io/interpretable-ml-book/lime.html): Local Interpretable Model-agnostic Explanations. The [TextExplainer library](https://eli5.readthedocs.io/en/latest/tutorials/black-box-text-classifiers.html) does a good job of using LIME on language models. Check out Christoph Molnar's introduction [here](https://christophm.github.io/interpretable-ml-book/lime.html).
 - SHAP: SHapley Additive exPlanations
 - MLXTEND: Machine Learning Extensions
