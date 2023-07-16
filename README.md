@@ -12,8 +12,10 @@ This list of resources was made for the Interpretability Hackathon ([link](https
     - [See also the tools available on interpretability:](#see-also-the-tools-available-on-interpretability)
     - [Digestible research](#digestible-research)
 - [Concepts](#concepts)
+  - [Features \[Olah et al., 2020\]](#features-olah-et-al-2020)
   - [Superposition \[Elhage et al., 2022\]](#superposition-elhage-et-al-2022)
     - [Polysemanticity \[Elhage et al., 2022\]](#polysemanticity-elhage-et-al-2022)
+    - [Privileged basis](#privileged-basis)
   - [Models of MLP neuron activation \[Foote et al., 2023; Bills et al., 2023\]](#models-of-mlp-neuron-activation-foote-et-al-2023-bills-et-al-2023)
   - [Identifying meaningful circuits of compoennts in Transformers](#identifying-meaningful-circuits-of-compoennts-in-transformers)
     - [Causal tracing \[Meng et al., 2022\]](#causal-tracing-meng-et-al-2022)
@@ -72,9 +74,23 @@ We have many ideas available for inspiration on the [aisi.ai Interpretability Ha
 
 # Concepts
 
+## Features [[Olah et al., 2020](https://distill.pub/2020/circuits/zoom-in/)]
+
+> A feature is a a scalar function of the input. In this essay, neural network features are directions, and often simply individual neurons. We claim such features in neural networks are typically meaningful features which can be rigorously studied. A meaningful feature is one that genuinely responds to an articulable property of the input, such as the presence of a curve or a floppy ear.
+
 ## Superposition [[Elhage et al., 2022]](https://transformer-circuits.pub/2022/toy_model/index.html)
 
+Superposition is when a there are more features in the feature space than there are neurons. This is nearly always the case for e.g. large language models (LLMs). It leads to neurons with polysemanticity.
+
 ### Polysemanticity [[Elhage et al., 2022]](https://transformer-circuits.pub/2022/toy_model/index.html)
+
+Polysemanticity is the phenomenon that a neuron corresponds to multiple features, i.e. it encodes multiple concepts / semantic features at a time. It often makes the neuron less interpretable. **Sparse features**[^1] are more likely to be encoded in a polysemantic neuron due to the probability of non-interference.
+
+[^1]: Sparse features are infrequent in the data.
+
+### Privileged basis
+
+A privileged basis is when the standard vectors are human-understandable and meaningful. In the context of model neurons, this means that a neuron's activation represents a meaningful concept. If a neuron is not in a privileged basis, it will be significantly harder to interpret and any transformations (such as ReLU) will cause interference instead of improving the interpretability.
 
 ## Models of MLP neuron activation [[Foote et al., 2023](https://arxiv.org/abs/2305.19911); [Bills et al., 2023](https://openaipublic.blob.core.windows.net/neuron-explainer/paper/index.html)]
 
