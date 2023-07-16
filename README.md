@@ -4,41 +4,53 @@ Interpretability research is an exciting and growing field of machine learning. 
 
 ![](https://uploads-ssl.webflow.com/634e78132252d2b0203a9ac8/635662f4e41031331b88038e_2_interpretability_teaser.png)
 
-This list of resources was made for the Interpretability Hackathon ([link](https://itch.io/jam/interpretability)) and contains an array of useful starter templates, tools to investigate model activations, and a number of introductory resources. Check out [aisi.ai](https://aisi.ai/) for some ideas for projects within ML & AI safety.
+This list of resources was made for the Interpretability Hackathon ([link](https://alignmentjam.com/jam/interpretability)) and contains an array of useful starter templates, tools to investigate model activations, and a number of introductory resources. Check out [aisi.ai](https://aisi.ai/) for some ideas for projects within ML & AI safety.
 
 - [Interpretability starter](#interpretability-starter)
   - [Inspiration](#inspiration)
-  - [Introductions to mechanistic interpretability](#introductions-to-mechanistic-interpretability)
-  - [See also the tools available on interpretability:](#see-also-the-tools-available-on-interpretability)
-  - [Digestible research](#digestible-research)
+    - [Introductions to mechanistic interpretability](#introductions-to-mechanistic-interpretability)
+    - [See also the tools available on interpretability:](#see-also-the-tools-available-on-interpretability)
+    - [Digestible research](#digestible-research)
+- [Concepts](#concepts)
+  - [Superposition \[Elhage et al., 2022\]](#superposition-elhage-et-al-2022)
+    - [Polysemanticity \[Elhage et al., 2022\]](#polysemanticity-elhage-et-al-2022)
+  - [Models of MLP neuron activation \[Foote et al., 2023; Bills et al., 2023\]](#models-of-mlp-neuron-activation-foote-et-al-2023-bills-et-al-2023)
+  - [Identifying meaningful circuits of compoennts in Transformers](#identifying-meaningful-circuits-of-compoennts-in-transformers)
+    - [Causal tracing \[Meng et al., 2022\]](#causal-tracing-meng-et-al-2022)
+  - [Memory editing \[Meng et al., 2022; Meng et al., 2023; Hoelscher-Obermaier, 2023\]](#memory-editing-meng-et-al-2022-meng-et-al-2023-hoelscher-obermaier-2023)
+    - [Machine unlearning](#machine-unlearning)
+    - [Concept erasure](#concept-erasure)
+  - [Ablation](#ablation)
+    - [Ablation as model editing \[Li et al., 2023\]](#ablation-as-model-editing-li-et-al-2023)
+  - [Adding activation vectors to modulate behavior \[Turner et al., 2023\]](#adding-activation-vectors-to-modulate-behavior-turner-et-al-2023)
+  - [Automated circuit detection \[Conmy et al., 2023\]](#automated-circuit-detection-conmy-et-al-2023)
+  - [Linear probes](#linear-probes)
+    - [Sparse probing \[Gurnee et al., 2023\]](#sparse-probing-gurnee-et-al-2023)
 - [Starter projects](#starter-projects)
-  - [🙋‍♀️ Simple templates & tools](#️-simple-templates--tools)
-    - [Activation Atlas [tool]](#activation-atlas-tool)
+  - [🙋‍♀️ Simple templates \& tools](#️-simple-templates--tools)
+    - [Activation Atlas \[tool\]](#activation-atlas-tool)
     - [BertViz](#bertviz)
-    - [EasyTransformer [code]](#easytransformer-code)
+    - [EasyTransformer \[code\]](#easytransformer-code)
       - [Demo notebook of EasyTransformer](#demo-notebook-of-easytransformer)
-    - [Converting Neural Networks to graphs [code]](#converting-neural-networks-to-graphs-code)
+    - [Converting Neural Networks to graphs \[code\]](#converting-neural-networks-to-graphs-code)
     - [Reviewing explainability tools](#reviewing-explainability-tools)
-    - [The IML R package [code]](#the-iml-r-package-code)
+    - [The IML R package \[code\]](#the-iml-r-package-code)
   - [👩‍🔬 Advanced templates and tools](#-advanced-templates-and-tools)
-    - [Redwood Research's interpretability on Transformers [tool]](#redwood-researchs-interpretability-on-transformers-tool)
+    - [Redwood Research's interpretability on Transformers \[tool\]](#redwood-researchs-interpretability-on-transformers-tool)
 
-### Inspiration
+## Inspiration
 
 We have many ideas available for inspiration on the [aisi.ai Interpretability Hackathon ideas list](http://localhost:3000/list/interpretability-hackathon). A lot of interpretability research is available on [distill.pub](https://distill.pub/), [transformer circuits](https://transformer-circuits.pub/), and [Anthropic's research page](https://www.anthropic.com/research).
 
 ### Introductions to mechanistic interpretability
 
-- [Catherine Olsson's on getting starter with mechanistic interpretability research](https://www.youtube.com/watch?v=ll0oduwDEwI)
-  - [02:00](https://youtu.be/ll0oduwDEwI?t=117) Start of the talk
-  - [03:30](https://youtu.be/ll0oduwDEwI?t=205) What is mechanistic interpretability?
-  - [Slideshow](https://docs.google.com/presentation/d/1BNY1xaJLBfMzcgrY_zjqtUAu1QXlzkbbhOlV7XVVlC4/edit#slide=id.g175ecc9ec98_0_63)
+- [Keynote talk of the Interpretability Hackathon 3.0](https://youtu.be/lzPOspNnnYc) with [Neel Nanda](https://www.neelnanda.io/about)
 - [A video walkthrough of A Mathematical Framework for Transformer Circuits](https://www.youtube.com/watch?v=KV5gbOmHbjU).
 - The [Transformer Circuits YouTube series](https://www.youtube.com/watch?v=V3NQaDR3xI4&list=PLoyGOS2WIonajhAVqKUgEMNmeq3nEeM51)
+- Callum McDougall's introduction to mechanistic interpretability
 - Jacob Hilton's deep learning curriculum [week on interpretability](https://github.com/jacobhilton/deep_learning_curriculum/blob/master/8-Interpretability.md)
 - [An annotated list of good interpretability papers](https://www.neelnanda.io/mechanistic-interpretability/favourite-papers), along with summaries and takes on what to focus on.
 - [Christoph Molnar's book about traditional interpretability](https://christophm.github.io/interpretable-ml-book)
-- [Neel's barebones prerequisites for mechanistic interpretability research](https://www.neelnanda.io/mechanistic-interpretability/prereqs)
 
 ### See also the tools available on interpretability:
 
@@ -55,7 +67,48 @@ We have many ideas available for inspiration on the [aisi.ai Interpretability Ha
 - Andrej Karpathy's ["Understanding what convnets learn"](https://cs231n.github.io/understanding-cnn/)
 - [Looking inside a neural net](https://ml4a.github.io/ml4a/looking_inside_neural_nets/)
 - 12 toy language models designed to be easier to interpret, in the style of a Mathematical Framework for Transformer Circuits: 1, 2, 3 and 4 layer models, for each size one is attention-only, one has GeLU activations and one has SoLU activations (an activation designed to make the model's neurons more interpretable - <https://transformer-circuits.pub/2022/solu/index.html>) (these aren't well documented yet, but are available in EasyTransformer)
+- [A Walkthrough of Finding Neurons In A Haystack](https://youtu.be/r1cfSpVAeqQ) (pt. 1)
 - [Anthropic Twitter thread going through some language model results](https://twitter.com/anthropicai/status/1541469936354136064?lang=en)
+
+# Concepts
+
+## Superposition [[Elhage et al., 2022]](https://transformer-circuits.pub/2022/toy_model/index.html)
+
+### Polysemanticity [[Elhage et al., 2022]](https://transformer-circuits.pub/2022/toy_model/index.html)
+
+## Models of MLP neuron activation [[Foote et al., 2023](https://arxiv.org/abs/2305.19911); [Bills et al., 2023](https://openaipublic.blob.core.windows.net/neuron-explainer/paper/index.html)]
+
+MLP neuron activation models are models that attempt to explain in which cases neurons fire. It's based on a few principles: 1) We expect MLP neurons to activate in specific token sequences, 2) we can create a simplified model of its activation that does not require the neural network, and 3) that model can be validated against real activation.
+
+[Foote et al. [2023]](https://arxiv.org/abs/2305.19911) create a semantic graph model over the token sequences that a neuron activates to while [Bills et al. [2023]](https://openaipublic.blob.core.windows.net/neuron-explainer/paper/index.html) use GPT-4 to create explanations and use these explanations to predict activatino.
+
+## Identifying meaningful circuits of compoennts in Transformers
+
+### Causal tracing [[Meng et al., 2022]](https://memit.baulab.info/)
+
+## Memory editing [[Meng et al., 2022](https://memit.baulab.info/); [Meng et al., 2023](https://arxiv.org/pdf/2210.07229.pdf); [Hoelscher-Obermaier, 2023](https://arxiv.org/pdf/2305.17553.pdf)]
+
+Memory editing of language models was introduced with
+
+### Machine unlearning
+
+### Concept erasure
+
+## Ablation
+
+### Ablation as model editing [[Li et al., 2023]](https://openreview.net/forum?id=ytYaiSQNCB)
+
+Using activation ablastion, you can remove causal connections between parts of a model (e.g. attention heads) to modify behaviors. [Li et al. [2023]](https://openreview.net/forum?id=ytYaiSQNCB) reduce toxicity of a model from 45% to 33%. They do this by training a binary edge mask over the computational graph of causal connections to perform poorly on their "negative examples" dataset while maintaining performance.
+
+## Adding activation vectors to modulate behavior [[Turner et al., 2023]](https://www.lesswrong.com/posts/5spBue2z2tw4JuDCx/steering-gpt-2-xl-by-adding-an-activation-vector)
+
+## Automated circuit detection [[Conmy et al., 2023]](https://arxiv.org/pdf/2304.14997.pdf)
+
+## Linear probes
+
+### Sparse probing [[Gurnee et al., 2023]](https://arxiv.org/pdf/2305.01610.pdf)
+
+This is basically linear probes that constrain the amount of neurons of the probe. It mitigates the problem that the linear probe itself does computation, even if it's just linear. Neel Nanda [describes](https://youtu.be/r1cfSpVAeqQ?t=867) a critique of linear probes as 3D: 1) You design what feature you're looking for, not getting the chance to find features from a model-first perspective. 2) There is a chance the linear probe does computation since we force it to fit the data, i.e. the model might not represent this. 3) Probing is correlational rather than causal. Sparse probing still suffers from (1) and (3). However, it is less susceptible to correlations and it identifies individual neurons perfectly with prileged bases. **Useful for first explorations**.
 
 # Starter projects
 
